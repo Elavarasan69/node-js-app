@@ -8,7 +8,10 @@ let db = null
 
 //add external files out of folder
 app.use(express.static('public'))
-
+let port = process.env.PORT
+if(port == null || port ==""){
+  port = 3000
+}
 //mongo db client
 const MongoClient = mongodb.MongoClient;
 //db connection
@@ -25,7 +28,7 @@ MongoClient.connect(dbConnection ,{useNewUrlParser:true,useUnifiedTopology:true}
     throw err;
   } 
   db = client.db(dbname)
-  app.listen(3000)
+  app.listen(port)
 })
 
 app.use(express.json())
