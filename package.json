@@ -1,0 +1,22 @@
+{
+  "name": "demoapp",
+  "version": "1.0.0",
+  "description": "This is a demo app",
+  "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "rerun": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elavarasan",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^3.7.2",
+    "nodemon": "^2.0.22"
+  }
+}
