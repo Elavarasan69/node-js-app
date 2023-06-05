@@ -2,7 +2,7 @@
   "name": "demoapp",
   "version": "1.0.0",
   "description": "This is a demo app",
-  "main": "index.js",
+  "main": "server.js",
   "engines": {
     "node": "14.x"
   },
