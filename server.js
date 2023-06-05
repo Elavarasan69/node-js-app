@@ -35,15 +35,15 @@ app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 //securing the application
-function passProtected(request, response, next){
-response.set('WWW-Authenticate','Basic realm="Todo App"')
-if(request.headers.authorization == 'Basic aWQ6cGFzc3dvcmQ='){
-  next()
-}else{
-  response.status(401).send("please prove id password")
-}
-}
-app.use(passProtected)
+// function passProtected(request, response, next){
+// response.set('WWW-Authenticate','Basic realm="Todo App"')
+// if(request.headers.authorization == 'Basic aWQ6cGFzc3dvcmQ='){
+//   next()
+// }else{
+//   response.status(401).send("please prove id password")
+// }
+// }
+// app.use(passProtected)
 
 
 app.get('/', function(request,response){
