@@ -7,7 +7,6 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node server.js",
     "rerun": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
