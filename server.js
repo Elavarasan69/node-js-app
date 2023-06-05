@@ -123,3 +123,6 @@ app.post('/delete-item',function(request,response){
     })
   })
 
+//Export the express api
+module.exports = app
+
